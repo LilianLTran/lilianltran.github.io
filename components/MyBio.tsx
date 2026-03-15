@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Mail, Github, Linkedin } from "lucide-react";
 
 import { profile } from "@/data/profile";
+import { withBasePath } from "@/lib/path";
 
 export default function MyBio() {
   return (
@@ -9,7 +10,7 @@ export default function MyBio() {
       justify-center overflow-hidden bg-neutral-900 px-6 py-12 lg:fixed 
       lg:left-0 lg:top-0 lg:h-screen lg:min-h-0 lg:w-[30%] lg:px-0 lg:py-0">
       <Image
-        src="/background.jpg"
+        src={withBasePath("/background.jpg")}
         alt="Profile background"
         fill
         priority
@@ -24,7 +25,7 @@ export default function MyBio() {
         <div className="mb-5 h-24 w-24 overflow-hidden rounded-full border-4 
           border-white/70 shadow-xl">
           <Image
-            src="/profile.jpg"
+            src={withBasePath("/profile.jpg")}
             alt="Profile"
             width={96}
             height={96}

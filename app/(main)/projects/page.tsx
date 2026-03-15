@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { projects } from "@/data/projects";
+import { withBasePath } from "@/lib/path";
 
 export default function ProjectsPage() {
   return (
@@ -27,7 +28,7 @@ export default function ProjectsPage() {
                 <div className="relative min-h-[220px] lg:min-h-full">
                   {project.image && (
                     <Image
-                      src={project.image}
+                      src={withBasePath(project.image)}
                       alt={project.title}
                       fill
                       className="object-contain"
