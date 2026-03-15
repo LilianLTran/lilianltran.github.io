@@ -52,7 +52,8 @@ export default function HobbiesPage() {
       </section>
 
       <section className="pt-12">
-        <p className="leading-7 text-neutral-600 dark:text-neutral-300 text-justify">
+        <p className="leading-7 text-neutral-600 dark:text-neutral-300 
+          text-justify">
           I’m drawn to hobbies that combine creativity with structure.
           Whether building software or participating in narrative games,
           I enjoy systems where thoughtful design shapes the experience.
