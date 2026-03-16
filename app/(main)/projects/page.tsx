@@ -46,7 +46,7 @@ export default function ProjectsPage() {
                       </h2>
 
                       <p className="mt-4 max-w-2xl text-sm leading-7 
-                        text-neutral-600 dark:text-neutral-300">
+                        text-neutral-600 dark:text-neutral-300 text-justify">
                         {project.description}
                       </p>
                     </div>
