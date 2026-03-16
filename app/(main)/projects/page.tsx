@@ -6,8 +6,10 @@ export default function ProjectsPage() {
   return (
     <div>
       <section>
-        <h1 className="text-4xl font-semibold tracking-tight">Projects</h1>
-        <p className="mt-3 max-w-2xl text-neutral-600 dark:text-neutral-300">
+        <h1 className="text-4xl font-semibold tracking-tight dark:text-white">
+          Projects
+        </h1>
+        <p className="mt-3 text-neutral-600 dark:text-neutral-300">
           A deeper look at selected projects across full-stack development,
           AI-powered applications, and product-focused engineering.
         </p>
@@ -19,7 +21,7 @@ export default function ProjectsPage() {
             <article
               key={project.title}
               className="overflow-hidden rounded-3xl border border-neutral-200 
-                bg-white shadow-sm transition hover:shadow-lg 
+                bg-white shadow-sm transition hover:shadow-lg dark:text-white 
                 dark:border-neutral-800 dark:bg-neutral-900"
             >
               <div 

@@ -33,16 +33,14 @@ export default function MainLayout({ children }: MainLayoutProps) {
   if (!mounted) return null;
 
   return (
-    <main className="min-h-screen">
-      <div className="flex min-h-screen flex-col lg:flex-row">
-        <MyBio />
+    <main className={`min-h-screen ${isDark ? "dark" : ""}`}>
+      <div className="flex min-h-screen flex-col lg:flex-row dark:bg-neutral-900">
+        <MyBio/>
 
         <section
-          className={`min-h-screen w-full transition-colors duration-500 lg:ml-[30%] lg:w-[70%] ${
-            isDark ? "bg-neutral-950 text-white" : "bg-white text-neutral-900"
-          }`}
+          className={`min-h-screen w-full transition-colors duration-500 lg:ml-[30%] lg:w-[70%]`}
         >
-          <Navbar isDark={isDark} />
+          <Navbar/>
 
           <div className="px-6 py-12 lg:px-20 lg:pt-24">{children}</div>
         </section>

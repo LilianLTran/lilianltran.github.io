@@ -3,10 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-type NavbarProps = {
-  isDark?: boolean;
-};
-
 const navItems = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
@@ -14,33 +10,27 @@ const navItems = [
   { name: "Hobbies", path: "/hobbies" },
 ]
 
-export default function Navbar({ isDark = false }: NavbarProps) {
+export default function Navbar() {
   const pathname = usePathname()
 
   return (
-    <header
-      className={`z-30 border-b backdrop-blur lg:fixed lg:top-0 lg:right-0 
-        lg:w-[70%] ${
-        isDark
-          ? "border-white/10 bg-neutral-950/85"
-          : "border-neutral-200 bg-white/85"
-      }`}
-    >
+    <header className="
+      z-30 border-b backdrop-blur 
+      lg:fixed lg:top-0 lg:right-0 lg:w-[70%] 
+      border-neutral-200 dark:border-white/30  
+      bg-white/85 dark:bg-neutral-950/85
+    ">
       <div className="flex items-center justify-between px-6 py-4 lg:px-10">
         <nav className="flex items-center gap-6 text-sm font-medium">
           {navItems.map((item) => {
-            const isActive = pathname == item.path;
-
+            const isActive = pathname == item.path || pathname.startsWith(item.path + "/");
             return (
               <Link
                 key={item.path}
                 href={item.path}
-                className={`group relative pb-1 transition ${
-                  isDark
-                    ? "text-white/80 hover:text-white"
-                    : "text-neutral-600 hover:text-neutral-900"
-                } ${isActive ? (
-                  isDark ? "text-white" : "text-neutral-900"
+                className={`group relative pb-1 transition text-neutral-600 hover:text-neutral-800 dark:hover:text-white
+                ${isActive ? (
+                  "text-neutral-950 dark:text-white"
                 ) : ""}`}
               >
                 {item.name}

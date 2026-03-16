@@ -3,14 +3,14 @@ import { projects } from "@/data/projects";
 
 export default function HomePage() {
   return (
-    <>
+    <div className="dark:text-white">
       {/* Right section */}
       <div>
         <h1 className="text-4xl font-semibold">
           Hi, I'm {profile.name}
         </h1>
 
-        <p className="mt-1 text-lg text-neutral-500">
+        <p className="mt-1 text-lg text-neutral-500 text-justify">
           {profile.bio}
         </p>
 
@@ -87,6 +87,6 @@ export default function HomePage() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -1,7 +1,7 @@
 export const profile = {
   fullName: "Lilian L. Tran",
   name: "Lilian",
-  handle: "@myhandle",
+  handle: "@lilianlinhtran",
   email: "lilianlinhtran@gmail.com",
   github: "https://github.com/LilianLTran",
   linkedin: "https://linkedin.com/in/linh-lilian-tran",

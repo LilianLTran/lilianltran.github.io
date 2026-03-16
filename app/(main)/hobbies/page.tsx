@@ -26,7 +26,7 @@ export default function HobbiesPage() {
 
           {/* Text */}
           <div>
-            <h2 className="text-2xl font-semibold">Jubensha</h2>
+            <h2 className="text-2xl font-semibold dark:text-white">Jubensha</h2>
             <div className="mt-4 leading-7 text-neutral-600 
               dark:text-neutral-300 text-justify">
               <p className="mt-2">

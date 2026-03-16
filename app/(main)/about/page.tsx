@@ -1,7 +1,9 @@
 export default function AboutPage() {
   return (
     <>
-      <h1 className="text-4xl font-semibold tracking-tight">About Me</h1>
+      <h1 className="text-4xl font-semibold tracking-tight dark:text-white">
+        About Me
+      </h1>
 
       <div className="mt-6 space-y-6 text-neutral-600 dark:text-neutral-300 
         text-justify">
