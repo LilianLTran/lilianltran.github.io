@@ -6,7 +6,7 @@ export default function ProjectsPage() {
   return (
     <div>
       <section>
-        <h1 className="text-4xl font-semibold tracking-tight dark:text-white">
+      <h1 className="text-4xl font-semibold tracking-tight dark:text-white">
           Projects
         </h1>
         <p className="mt-3 text-neutral-600 dark:text-neutral-300">
@@ -15,7 +15,7 @@ export default function ProjectsPage() {
         </p>
       </section>
 
-      <section className="pt-10">
+      <section className="pt-10 text-neutral-900">
         <div className="space-y-10">
           {projects.map((project) => (
             <article

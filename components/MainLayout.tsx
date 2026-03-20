@@ -34,7 +34,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
 
   return (
     <main className={`min-h-screen ${isDark ? "dark" : ""}`}>
-      <div className="flex min-h-screen flex-col lg:flex-row dark:bg-neutral-900">
+      <div className="flex min-h-screen flex-col lg:flex-row bg-neutral-100 dark:bg-neutral-900">
         <MyBio/>
 
         <section
@@ -42,7 +42,7 @@ export default function MainLayout({ children }: MainLayoutProps) {
         >
           <Navbar/>
 
-          <div className="px-6 py-12 lg:px-20 lg:pt-24">{children}</div>
+          <div className="px-6 py-12 lg:px-20 lg:pt-24 text-neutral-800">{children}</div>
         </section>
       </div>
     </main>

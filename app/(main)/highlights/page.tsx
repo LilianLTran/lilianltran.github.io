@@ -58,10 +58,12 @@ const highlights = [
 
 export default function HighlightsPage() {
   return (
-    <>
+    <div className="dark:text-white">
       {/* Header */}
       <section>
-        <h1 className="text-4xl font-semibold tracking-tight">Highlights</h1>
+        <h1 className="text-4xl font-semibold tracking-tight">
+          Highlights
+        </h1>
 
         <p className="mt-3 max-w-2xl text-neutral-600 dark:text-neutral-300">
           A selection of experiences, achievements, and activities over time.
@@ -82,6 +84,6 @@ export default function HighlightsPage() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
