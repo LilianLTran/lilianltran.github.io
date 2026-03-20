@@ -88,6 +88,41 @@ export default function HomePage() {
           ))}
         </div>
       </div>
+
+      {/* Hobbies */}
+      <div className="pt-12">
+        <p className="text-neutral-600 dark:text-neutral-300 text-justify">
+          Outside of work, I enjoy exploring storytelling and deduction through
+          games like{" "}
+          <a
+            href="/botc"
+            className="underline decoration-current underline-offset-4 font-medium 
+              text-purple-700 hover:text-purple-800 
+              dark:text-amber-400 dark:hover:text-amber-300"
+          >
+            Blood on the Clocktower
+          </a>{" "}
+          and{" "}
+          <a
+            href="/jubensha"
+            className="underline decoration-current underline-offset-4 font-medium 
+              text-purple-700 hover:text-purple-800 
+              dark:text-amber-400 dark:hover:text-amber-300"
+          >
+            Jubensha
+          </a>
+          , as well as{" "}
+          <a
+            href="/murder-mystery"
+            className="underline decoration-current underline-offset-4 font-medium 
+              text-purple-700 hover:text-purple-800 
+              dark:text-amber-400 dark:hover:text-amber-300"
+          >
+            Writing Murder Mystery Games
+          </a>
+          .
+        </p>
+      </div>
     </div>
   );
 }
