@@ -39,7 +39,7 @@ export const projects = [
       tech.youtube,
       tech.supabase
     ],
-    link: "#",
+    link: "https://github.com/LilianLTran/PhotoThemeSong",
     image: "/photothemesongfinder.png",
   },
 
