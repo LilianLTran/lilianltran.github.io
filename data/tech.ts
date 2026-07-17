@@ -97,4 +97,19 @@ export const tech = {
     name: "YouTube",
     badge: "https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=white"
   },
+
+  vite: {
+    name: "Vite",
+    badge: "https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white"
+  },
+
+  reactRouter: {
+    name: "React Router",
+    badge: "https://img.shields.io/badge/React_Router-CA4245?logo=reactrouter&logoColor=white"
+  },
+  
+  vercel: {
+    name: "Vercel",
+    badge: "https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white"
+  },
 };

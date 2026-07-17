@@ -42,6 +42,7 @@ export const projects = [
     link: "#",
     image: "/photothemesongfinder.png",
   },
+
   {
     title: "BookTable",
     description:
@@ -61,5 +62,24 @@ export const projects = [
     ],
     link: "#",
     image: "/booktable.png",
+  },
+  {
+    title: "Interactive Casebook",
+    description:
+      "A data-driven detective/social-sim web game built with a strict " +
+      "content-vs-engine separation: React components render view objects, " +
+      "a service layer talks to a rules engine, and every case's locations, " +
+      "characters, dialogue, and clues live entirely in JSON. Supports " +
+      "multiple cases with per-case theming, an interactive nested map " +
+      "system, and a customizable relationship/reputation model.",
+    tech: [
+      tech.react,
+      tech.typescript,
+      tech.vite,
+      tech.reactRouter,
+      tech.vercel
+    ],
+    link: "https://github.com/LilianLTran/DetectiveSim",
+    image: "/interactive_casebook.png",
   },
 ];
